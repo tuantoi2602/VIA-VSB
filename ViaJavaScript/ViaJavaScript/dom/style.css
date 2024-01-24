@@ -1,0 +1,15 @@
+﻿
+#message-container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.flash-message{
+    width: 300px;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 10px;
+    border: 3px solid rgba(0, 148, 255, .5);
+    border-radius: 5px;
+    margin-top: 5px;
+}

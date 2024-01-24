@@ -1,0 +1,36 @@
+﻿@color: #0F0;
+
+
+#header {
+    color: @color;
+    background-color: @color;
+    border-radius: 15px;
+    text-shadow: 1px red;
+    -moz-animation: alternate;
+    -o-animation: alternate;
+    -webkit-animation: alternate;
+    animation: alternate;
+}
+
+h2, h1 {
+    color: @color;
+}
+
+
+
+
+// Variables inside property
+
+@side: left;
+
+#box{
+    border-@{side}: 5px;
+}
+
+
+
+
+@imgPath: '../imgs/';
+#img{
+    background-image: url('@{imgPath}image.jpg');
+}

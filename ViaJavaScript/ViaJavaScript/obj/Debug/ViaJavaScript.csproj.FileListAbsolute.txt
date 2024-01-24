@@ -1,0 +1,28 @@
+C:\Projects\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll
+C:\Projects\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.pdb
+C:\Projects\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csprojResolveAssemblyReference.cache
+C:\Projects\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.dll
+C:\Projects\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.pdb
+C:\Users\jaw254\Desktop\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll
+C:\Users\jaw254\Desktop\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.pdb
+C:\Users\jaw254\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csprojResolveAssemblyReference.cache
+C:\Users\jaw254\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.dll
+C:\Users\jaw254\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.pdb
+C:\Users\Hanz\Desktop\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll
+C:\Users\Hanz\Desktop\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.pdb
+C:\Users\Hanz\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csprojResolveAssemblyReference.cache
+C:\Users\Hanz\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.dll
+C:\Users\Hanz\Desktop\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.pdb
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll.config
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.pdb
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csprojResolveAssemblyReference.cache
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.dll
+c:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.pdb
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll.config
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.dll
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\bin\ViaJavaScript.pdb
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csprojResolveAssemblyReference.cache
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.csproj.CoreCompileInputs.cache
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.dll
+d:\OneDrive\Výuka\VIA\2017\temata\3 - JavaScript\ViaJavaScript\ViaJavaScript\obj\Debug\ViaJavaScript.pdb

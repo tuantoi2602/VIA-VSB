@@ -1,0 +1,340 @@
+body {
+    background: url(../images/background.jpg);
+}
+
+.background {
+ background-size: cover;
+}
+
+
+/* tạo khoảng cách cho các logo brand */
+.col-md-2-10 {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 20%;
+}
+
+
+/*tạo màu cho title của chữ VIA */ 
+.red {
+    color: #ff0000;
+}
+/*tạo background cho trang */ 
+.container {
+    background-color: white;
+    padding: 0 70px;
+    width: 1120px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+    padding: .5rem 0rem;
+    height: 120px;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+
+
+/*tạo khoảng cách đứng bên trái cho logo */    
+.navbar .logo {
+    margin-left: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* tạo độ đậm cho logo */  
+.logo {
+    font-weight: 700;
+}
+/* tạo khoảng cách trái - phải giữa các tiêu đề chuyển trang */   
+.navbar li {
+    margin-left: 30px;
+}
+/*tạo màu và size chữ cho mục chuyển trang */  
+.navbar a {
+    color: #959595;
+    font-size: 14px;
+}
+/* tạo khoảng cách cho mục chuyển trang và quy ước phần khung cho nội dung chuyển trang*/
+.navbar ul {
+    background-color: white;
+    margin-right: 70px;
+}
+ /*tạo khoảng cách ở dưới nội dung*/   
+ .main-blocks {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.main-blocks-icon {
+    color: white;
+    display: block;
+    float: left;
+    margin: 0 6px 6px 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+}
+/* tạo title cho nội dung */   
+.main-blocks-text h3 {
+    margin: 0 0 0 48px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+/* tạo nội dung ở phần bổ sung*/   
+.main-blocks-text p {
+    margin: 25px 0 15px;
+    color: #959595;
+    font-size: 12px;
+}
+
+.title {
+    background-color: #ff0000;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 60px 70px;
+}
+
+.title p.bigger {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+
+.title p.smaller {
+    font-size: 36px;
+    line-height: 36px;
+    color: white;
+    margin-top: 0;
+}
+
+.map {
+    margin-left: -70px;
+    margin-right: -70px;
+    height: 400px;
+}
+    
+a.btn.yellow-darkgray,
+button.btn.yellow-darkgray {
+    background: #ff0000;
+    color: white;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+}
+
+/* footer background */
+
+footer {
+    background: #333;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 0 70px;
+    font-size: 12px;
+    color: #636363;
+}
+
+
+
+/*tạo khoảng cách ở trên */  
+footer .row {
+    padding: 60px 0;
+}
+/*màu title ở dưới*/
+footer h3 {
+    color: white;
+    font-size: 28px;
+}
+/*lastest-tweet*/
+footer h3.small {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.content {
+    padding-top: 100px;
+}
+
+/* footer tác giả*/
+footer .info {
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 15px 70px 0 70px;
+    min-height: 58px;
+    background: #2b2b2b;
+    overflow: auto;
+}
+footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}  
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .copyright li {
+    float: left;
+    margin-right: 30px;
+    line-height: 26px;
+}
+
+footer li a {
+    color: #959595;
+}
+    /* Special for Project 1  */
+    
+    #infowindow-content .title {
+        font-weight: bold;
+    }
+    
+    #infowindow-content {
+        display: none;
+    }
+    
+    #map #infowindow-content {
+        display: inline;
+    }
+    
+    .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+    }
+    
+    #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+    }
+    
+    .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+    }
+    
+    .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+    }
+    
+    #pac-card #title {
+        font-size: 15px;
+        margin: 12px;
+    }
+    
+    .map .title {
+        background: white;
+    }
+    
+    #graph {
+        margin-bottom: 50px;
+        height: 250px;
+    }
+    
+    #graph p {
+        text-align: center;
+        line-height: 250px;
+        vertical-align: middle;
+    }
+    
+    #graph svg {
+        display: none;
+    }
+    
+    #weather {
+        height: 250px;
+    }
+    
+    #weather p.weather-message {
+        text-align: center;
+        line-height: 250px;
+        vertical-align: middle;
+    }
+    
+    .weather-widget-header-layout {
+        margin-left: 10px;
+        padding: 27px 0;
+    }
+    
+    .weather-widget-header img {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: -5px;
+        border-radius: 4px;
+        z-index: 100
+    }
+    
+    .weather-widget-body {
+        position: relative;
+        padding-bottom: 6.5px;
+    }
+    
+    .weather-widget-body-layout {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .weather-widget-body-temperature {
+        width: auto;
+        letter-spacing: -5px;
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 6.5px;
+        width: 50%;
+    }
+    
+    .weather-widget-body-weather {
+        padding-bottom: 6.5px;
+        width: 50%;
+    }
+    
+    .weather-widget-body-weather table {
+        width: 100%;
+    }
+    
+    .settings {
+        padding-bottom: 50px;
+    }
+    
+    #language-results {
+        position: absolute;
+        min-width: 250px;
+        z-index: 1000;
+        padding-top: 3px;
+    }
+    
+    #language-results a:hover {
+        color: white;
+    }

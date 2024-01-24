@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Priklad 1</title>
+</head>
+<body>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+	// funkce vrati XMLHttpRequest (XHR) objekt = odstraneni rozdilu v starsich prohlizecich
+	function getHTTPObject()
+	{
+		if (window.XMLHttpRequest)	
+		{
+			// IE7+, Firefox, Chrome, Opera, Safari
+			return new XMLHttpRequest();
+		}
+		else if (window.ActiveXObject)
+		{
+			// IE6, IE5
+			return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else
+		{
+			alert("Vas prohlizec bohuzel nepodporuje XMLHTTP!");
+			return null;
+		}
+	}	
+       
+
+	// Change the value of the outputText field
+	function setOutput(){
+		if(httpObject.readyState == 4){
+			document.getElementById('outputText').innerHTML = httpObject.responseText;
+		}
+	}
+      
+	// Implement business logic
+	function doWork(){
+		httpObject = getHTTPObject();
+
+		if (httpObject != null) {
+			httpObject.open("GET", "pr1.php?inputText="+document.getElementById('inputText').value, true);
+			httpObject.send(null);
+			httpObject.onreadystatechange = setOutput;
+		}
+	}
+      
+	var httpObject = null;
+	
+	//-->
+
+</script>
+<h1>Priklad 1</h1>
+<p>Vstupni text bude zpracovan asynchronne PHP skriptem a vysledek zobrazen.</p>
+<form name="testForm" id="testForm" action="">
+	Vstupni text:
+	<input type="text" onkeyup="doWork();" name="inputText" id="inputText" />
+	Vystup:
+	<label for="inputText" id="outputText" ></label>
+</form>
+<div id="error"></div>
+</body>
+</html>

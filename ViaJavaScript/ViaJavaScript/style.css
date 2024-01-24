@@ -1,0 +1,34 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main{
+    min-height: 400px;
+    padding: 10px;
+}
+
+a{
+    color: #0094ff;
+}
+
+#console{
+    border-top: 4px solid #808080;
+}
+
+
+#selector-page .blue{
+    color: #0094ff;
+}
+
+#dom-wrapper{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e9e9e9;
+    border: 10px solid #4d4d4d;
+}

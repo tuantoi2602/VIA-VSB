@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Priklad 5</title>
+    <link rel="stylesheet" href="jquery-ui-1.10.3.custom.min.css" />
+    <script src="jquery-1.9.1.js"></script>
+    <script src="jquery-ui-1.10.3.custom.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(function() {
+// test bez php -> odkomentovat data a source v metode autocomplete
+//var data = [ "Lee Babin","Joe Smith","John Doe", "Lara Croft", "Pepa Novak" ];
+
+	$("#yourname").autocomplete({ 
+      source:'pr4.php'
+  //    source:data
+  });
+});
+</script>
+<h1>Priklad 4</h1>
+<article>
+Automaticke doplnovani pomoci jQuery a AJAX - zjednodusena podoba prikladu 4
+<form action="" method="post">
+<fieldset style="display:inline">
+	<legend>Zanechte vzkaz</legend>
+	Komu?<br />
+	<input id="yourname" style="width: 150px; height: 16px;" type="text" value="" />
+<div id="vypis"></div>
+<br />
+Text vzkazu:<br />
+	<textarea style="height: 80px;"></textarea><br />
+</fieldset>
+</form>
+</article>
+</body>
+</html>

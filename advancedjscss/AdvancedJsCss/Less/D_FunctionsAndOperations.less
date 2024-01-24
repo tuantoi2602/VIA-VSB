@@ -1,0 +1,36 @@
+﻿@the-border: 1px;
+@base-color: #111;
+@red:        #842210;
+
+#header {
+    color: (@base-color * 3);
+    border-left: @the-border;
+    border-right: (@the-border * 2);
+}
+
+#footer {
+    color: (@base-color + #003300);
+
+    // Saturation decreased by 10%
+    border-color: desaturate(@red, 10%);
+}
+
+#body{
+    @base: red;
+    @width: 0.5;
+
+    // Convert to percents
+    width: percentage(0.5); // returns `50%`
+
+    // Saturation increased by 5%
+    color: saturate(@base, 5%);
+
+    // Rotate with HUE of color that is lightened by 25%
+    background-color: spin(lighten(@base, 25%), 8);
+
+
+
+}
+
+
+// More: http://lesscss.org/functions/#color-operations

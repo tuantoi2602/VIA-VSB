@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Less/A_Variables.css",
+    "inputFile": "Less/A_Variables.less"
+  },
+  {
+    "outputFile": "Less/D_FunctionsAndOperations.css",
+    "inputFile": "Less/D_FunctionsAndOperations.less"
+  }
+]

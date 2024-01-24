@@ -1,0 +1,299 @@
+body {
+    background: url(../images/background.jpg);
+}
+
+.background {
+ background-size: cover;
+}
+
+/*tạo màu cho title của chữ VIA */ 
+.red {
+    color: #ff0000;
+}
+/*tạo background cho trang */ 
+.container {
+    background-color: white;
+    padding: 0 70px;
+    width: 1120px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+ 
+/*   tạo khoảng cách cho header*/ 
+.navbar {
+    padding: .5rem 0rem;
+    height: 120px;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+/*tạo khoảng cách đứng bên trái cho logo */    
+.navbar .logo {
+    margin-left: 70px;
+}
+/* tạo độ đậm cho logo */  
+.logo {
+    font-weight: 700;
+}
+/* tạo khoảng cách trái - phải giữa các tiêu đề chuyển trang */   
+.navbar li {
+    margin-left: 30px;
+}
+/*tạo màu và size chữ cho mục chuyển trang */  
+.navbar a {
+    color: #959595;
+    font-size: 14px;
+}
+/* tạo khoảng cách cho mục chuyển trang và quy ước phần khung cho nội dung chuyển trang*/
+.navbar ul {
+    background-color: white;
+    margin-right: 70px;
+}
+    
+/*giống như carousel nhưng chỉ là background cũa khung title*/
+    .title {
+        background-color: #ff0000;
+        margin-left: -70px;
+        margin-right: -70px;
+        padding: 60px 70px;
+    }
+    /*font chữ title contact */
+    .title p.bigger {
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+      
+/*tạo khoảng cách để xuất hiện map*/
+    
+    .map {
+        padding-left:0px;
+        margin-left: -70px;
+        margin-right: -70px;
+        height: 400px;
+        
+    }
+ 
+
+    
+    a.btn.yellow-darkgray,
+    button.btn.yellow-darkgray {
+        background: #ff0000;
+        color: white;
+        -o-transition: .2s;
+        -ms-transition: .2s;
+        -moz-transition: .2s;
+        -webkit-transition: .2s;
+        transition: .2s;
+        cursor: pointer;
+    }
+ 
+ /* tạo khoảng cách ở phía dưới cho form*/
+    form {
+        padding-bottom: 40px;
+    }
+/* footer background */
+
+footer {
+    background: #333;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 0 70px;
+    font-size: 12px;
+    color: #636363;
+}
+
+
+
+/*tạo khoảng cách ở trên */  
+footer .row {
+    padding: 60px 0;
+}
+/*màu title ở dưới*/
+footer h3 {
+    color: white;
+    font-size: 28px;
+}
+/*lastest-tweet*/
+footer h3.small {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* footer tác giả*/
+footer .info {
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 15px 70px 0 70px;
+    min-height: 58px;
+    background: #2b2b2b;
+    overflow: auto;
+}
+footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}  
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .copyright li {
+    float: left;
+    margin-right: 30px;
+    line-height: 26px;
+}
+
+footer li a {
+    color: #959595;
+}
+
+
+.float_r { float: right }
+
+.product_box {
+	float: left;
+	width: 220px;
+	text-align: center;
+	margin: 0 10px 30px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #ccc
+}
+
+.product_box img {
+	margin-bottom: 5px;
+}
+.product_box h3 {
+	font-size: 11px;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.product_box .product_price {
+	color: #11bdd1;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.product_box .addtocart {
+	float: left;
+	display: block;
+}
+.product_box .detail {
+	float: right;
+	display: block;
+}
+a.addtocart{ 
+    display: inline-block; 
+    width: 80px; 
+    height: 21px; 
+    line-height: 21px; 
+    text-align: center; 
+    font-size: 10px; 
+    font-weight: bold; 
+    color: #333; 
+    background: url(images/templatemo_addtocart.png)
+}
+a.detail{ 
+    display: inline-block; 
+    width: 64px; 
+    height: 20px; 
+    line-height: 20px; 
+    text-align: center; 
+    font-size: 10px; 
+    font-weight: bold; 
+    color: #333; 
+    background: url(images/templatemo_detail.png)
+}
+
+/*tạo khoảng cách ở dưới hình ảnh   */
+.main-images {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-images .image {
+    border-bottom: 1px solid #ff0000;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-images img {
+    object-fit: cover;
+    height: 180px;
+    width: auto;
+    overflow: hidden;
+}
+
+.main-imagess {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin:15px 22px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #0cb823;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .sidebar_box {
+	position: relative;
+	background: #f0f0f0;
+	margin-bottom: 36px;
+	border: 1px solid #dbdbdb
+}
+.sidebar_box h3 { font-size: 14px; font-weight: 700; padding: 0 10px 0 35px; margin: 0; width: 185px; height: 33px; line-height: 33px; margin-bottom: 0; background: url(images/templatemo_sidebar_header.png)  no-repeat; color: #2f2f2f }
+
+#sidebar .sidebar_box .content {
+	padding: 10px 10px 0;
+}
+.menu_category{
+    list-style: none;
+}
+.main-images .image {
+    border-bottom: 3px solid #ff0000;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.zoom {
+
+
+    transition: transform .2s; /* Animation */
+
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

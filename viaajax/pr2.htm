@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Priklad 2</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+
+      <!--
+	// funkce vrati XMLHttpRequest (XHR) objekt = odstraneni rozdilu v starsich prohlizecich
+	function getHTTPObject()
+	{
+		if (window.XMLHttpRequest)	
+		{
+			// IE7+, Firefox, Chrome, Opera, Safari
+			return new XMLHttpRequest();
+		}
+		else if (window.ActiveXObject)
+		{
+			// IE6, IE5
+			return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else
+		{
+			alert("Vas prohlizec bohuzel nepodporuje XMLHTTP!");
+			return null;
+		}
+	}	
+
+	// Change the value of the outputText field
+	
+	function setOutput()
+	{
+		if(httpObject.readyState == 4)
+		{
+			var combo = document.getElementById('type');
+			combo.options.length = 0;
+			var response = httpObject.responseText;
+			var items = response.split(";");
+			var count = items.length;
+			for (var i=0;i<count;i++)
+			{
+				var options = items[i].split("-");
+				combo.options[i] =
+				new Option(options[0],options[1]);
+			}
+		}
+	}
+
+
+	// Implement business logic
+	function doWork()
+	{
+		httpObject = getHTTPObject();
+		if (httpObject != null) 
+		{
+			httpObject.open("GET", "pr2.php?brand="+document.getElementById('brand').value, true);
+			httpObject.onreadystatechange = setOutput;
+			httpObject.send(null);
+		}
+	}
+	
+	var httpObject = null;
+
+	//-->
+
+</script>
+<h1>Priklad 2</h1>
+<p>
+V tomto pripade AJAX (opet s pomoci PHP) obstara zobrazeni typu aut podle aktualne vybrane znacky.
+</p>
+<form name="testForm" action="">
+<fieldset style="display:inline">
+  <legend>Znacka auta:</legend>
+  <select name="brand" id="brand" onchange="doWork();">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Lexus">Lexus</option>
+  </select>
+</fieldset>
+<fieldset style="display:inline">
+  <legend>Typ auta:</legend>
+  <select name="type" id="type">
+    <option value="1">A3</option>
+    <option value="2">A4</option>
+    <option value="3">A6</option>
+    <option value="4">A8</option>
+  </select>
+  </fieldset>
+</form>
+</body>
+</html>

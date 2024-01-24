@@ -1,0 +1,36 @@
+﻿
+// Loop
+
+.loop(@width) when (@width > 10)
+{
+
+    .box-@{width}{
+        // Generation of measure based on "unit" function 
+        width: unit(@width, px);
+    }
+
+    // Recursion
+    .loop(@width - 10);
+}
+
+.loop(100);
+
+
+
+// Loop over the array
+
+@widths: 10, 15, 30, 80;
+
+.loop-array(@array, @index: 0) when (@index < length(@widths))
+{
+
+    .box-two{
+        // extract gets members of array with a given index (array is counted from 1)
+        width: unit(extract(@array, @index + 1), px);
+    }
+
+    // Recursion
+    .loop-array(@array, @index + 1);
+}
+
+.loop-array(@widths);

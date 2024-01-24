@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Priklad 4</title>
+    <link rel="stylesheet" href="jquery-ui-1.10.3.custom.min.css" />
+    <script src="jquery-1.9.1.js"></script>
+    <script src="jquery-ui-1.10.3.custom.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(function() {
+  $("#yourname").keyup(function(event) {
+    var jqxhr = jQuery.ajax({
+        url: "pr4.php",
+        dataType: "json",
+        async: true,
+        timeout: 10000, /* timeout in ms */
+        type: "GET",
+        data: { term: this.value }
+    }).fail(function (jqXHR, textStatus) {
+        var msg = ("Web server: " + textStatus + " - " + jqXHR.statusText);
+        $("#vypis").text("Communication error!");
+    }).success(function (data) {
+        var vypis = $("#vypis").empty();
+        $.each(data, function (key, val) {
+          vypis.append("<div>"+val+"</div>");
+        });
+        vypis.children().addClass("ss");
+    });
+  });
+  
+  //lze resit i jinak, toto je ukazka jak pripojit event na dynamicky generovane elementy
+  $('div').on('click', '.ss', function (event) {
+      if(event.handled !== true){
+          $("#yourname").val(this.innerText);
+          $("#vypis").empty();          
+          event.handled = true;
+      }
+      return false;
+  });
+});
+</script>
+<h1>Priklad 4</h1>
+<article>
+Automaticke doplnovani pomoci jQuery Autocomplete a AJAX - zjednodusena podoba prikladu 3
+<form action="" method="post">
+<fieldset style="display:inline">
+	<legend>Zanechte vzkaz</legend>
+	Komu?<br />
+	<input id="yourname" style="width: 150px; height: 16px;" type="text" value="" />
+<div id="vypis"></div>
+<br />
+Text vzkazu:<br />
+	<textarea style="height: 80px;"></textarea><br />
+</fieldset>
+</form>
+</article>
+</body>
+</html>

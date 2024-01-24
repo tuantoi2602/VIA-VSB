@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Priklad 3</title>
+
+<script type="text/javascript">
+	// funkce vrati XMLHttpRequest (XHR) objekt = odstraneni rozdilu v starsich prohlizecich
+	function getHTTPObject()
+	{
+		if (window.XMLHttpRequest)	
+		{
+			// IE7+, Firefox, Chrome, Opera, Safari
+			return new XMLHttpRequest();
+		}
+		else if (window.ActiveXObject)
+		{
+			// IE6, IE5
+			return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else
+		{
+			alert("Vas prohlizec bohuzel nepodporuje XMLHTTP!");
+			return null;
+		}
+	}	
+	
+	function myautocomplete(hodnota) {
+		
+		httpObject = getHTTPObject();
+		httpObject.open("GET", "pr3.php?sstring="+hodnota);
+		httpObject.send(null);
+		httpObject.onreadystatechange = function() {
+			if (httpObject.readyState == 4 && httpObject.status == 200) {
+				document.getElementById("vypis").innerHTML = httpObject.responseText;
+			}
+		}
+	}
+	function setvalue(hodnota)
+	{
+		document.getElementById("yourname").value = hodnota;
+		document.getElementById("vypis").innerHTML = "";
+	}
+</script>
+</head>
+<body>
+<h1>Priklad 3</h1>
+<p>
+Jednou z prvnich (GOOGLE) a velice oblibenych funkcnosti, ktere muzeme pomoci AJAXu vytvorit, je automaticke doplnovani...
+</p>
+<form action="" method="post">
+<fieldset style="display:inline">
+	<legend>Zanechte vzkaz</legend>
+	Komu?<br />
+	<input id="yourname" style="width: 150px; height: 16px;" type="text" value="" onkeyup="myautocomplete(this.value)" />
+<div id="vypis"></div>
+<br />
+Text vzkazu:<br />
+	<textarea style="height: 80px;"></textarea><br />
+</fieldset>
+</form>
+</body>
+</html>
